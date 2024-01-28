@@ -1,23 +1,13 @@
-# Nextra Docs Template 
+# Предисловие
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+Настоящие методические указания к лабораторному практикуму предназначены для практического закрепления материала по дисциплинам "Информатика", “Архитектура ЭВМ и систем” и "Вычислительная техника". Лабораторные работы и домашние задания охватывают часть курсов, посвященную знакомству с принципами функционирования ЭВМ. Они разбиты на три раздела. В первый раздел включены четыре лабораторных работы и два домашних задания, предназначенные для ознакомления с учебой ЭВМ (базовой ЭВМ), на которой выполняются все лабораторные работы, и реализации с ее помощью простейших алгоритмов. Во втором разделе рассматривается организация ввода-вывода информации в базовой ЭВМ, а в третьем - реализация ее микропрограммного устройства управления. В приложениях приведена инструкция по работе с базовой ЭВМ и справочные таблицы.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+# Полезные ссылки
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+[Таблица с баллами](https://docs.google.com/spreadsheets/d/1IyOaK0uHXaalbrAgcxL2WMcrfuSrDEBRfEOMD6L9pcs/edit?usp=sharing)
 
-## Quick Start
+[Список вариантов](https://docs.google.com/spreadsheets/d/1IyOaK0uHXaalbrAgcxL2WMcrfuSrDEBRfEOMD6L9pcs/edit#gid=714494121)
 
-Click the button to clone this repository and deploy it on Vercel:
+[Оформление отчётов и примерный титульный лист](/titlepage)
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
-
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+[Загрузка отчётов](https://forms.gle/18DRTxRqxuikMDjb9)
