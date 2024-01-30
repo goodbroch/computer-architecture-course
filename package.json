@@ -1,7 +1,8 @@
 {
-  "name": "nextra-docs-template",
+  "name": "computer-architecture-course",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Course of computer architecture in ITMO",
+  "repository": "https://github.com/goodbroch/computer-architecture-course.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
