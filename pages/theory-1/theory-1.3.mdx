@@ -2,9 +2,11 @@
 title: 1.3. Таблица команд БЭВМ
 ---
 
+import MyTable from '/components/table';
+
 # Таблица команд БЭВМ
 
-<table>
+<MyTable>
     <thead>
         <tr>
             <th>Наименование</th>
@@ -15,10 +17,10 @@ title: 1.3. Таблица команд БЭВМ
     </thead>
     <tbody>
         <tr>
-            <td colspan="4" align="center" >Адресные команды</td>
+            <td colSpan="4" align="center" >Адресные команды</td>
         </tr>
         <tr>
-            <td>Побитовая коньюнкция</td>
+            <td>Побитовая конъюнкция</td>
             <td>AND M</td>
             <td>1XXX</td>
             <td>(A) & (M) -> A</td>
@@ -90,7 +92,7 @@ title: 1.3. Таблица команд БЭВМ
             <td>(M) + 1 -> M</td>
         </tr>
         <tr>
-            <td colspan="4" align="center" >Безадресные команды</td>
+            <td colSpan="4" align="center" >Безадресные команды</td>
         </tr>
         <tr>
             <td>Очистка аккумулятора</td>
@@ -165,7 +167,7 @@ title: 1.3. Таблица команд БЭВМ
             <td></td>
         </tr>
         <tr>
-            <td colspan="4" align="center" >Команды ввода-вывода</td>
+            <td colSpan="4" align="center" >Команды ввода-вывода</td>
         </tr>
         <tr>
             <td>Очистка флага</td>
@@ -192,7 +194,7 @@ title: 1.3. Таблица команд БЭВМ
             <td>(A) -> B</td>
         </tr>
     </tbody>
-</table>
+</MyTable>
 
 ### Примечания:
 

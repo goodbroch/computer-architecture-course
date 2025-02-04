@@ -1,0 +1,13 @@
+.table__with_border {
+	border-collapse: collapse;
+}
+
+.table__with_border th {
+	padding: 3px;
+	border-width: 1px;
+}
+
+.table__with_border td {
+	padding: 3px;
+	border-width: 1px;
+}
