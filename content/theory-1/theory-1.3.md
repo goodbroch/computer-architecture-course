@@ -2,11 +2,9 @@
 title: 1.3. Таблица команд БЭВМ
 ---
 
-import MyTable from '/components/table';
-
 # Таблица команд БЭВМ
 
-<MyTable>
+<table>
     <thead>
         <tr>
             <th>Наименование</th>
@@ -194,7 +192,7 @@ import MyTable from '/components/table';
             <td>(A) -> B</td>
         </tr>
     </tbody>
-</MyTable>
+</table>
 
 ### Примечания:
 

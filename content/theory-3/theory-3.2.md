@@ -2,8 +2,6 @@
 title: 3.2. Интерпретатор базовой ЭВМ
 ---
 
-import MyTable from '/components/table';
-
 ## Интерпретатор базовой ЭВМ
 
 Полный текст микропрограммы (интерпретатора команд) приведен в табл. 3.2. В этой таблице есть один "лишний" столбец (ВЕРТ.), содержание которого будет описано ниже.
@@ -12,8 +10,8 @@ import MyTable from '/components/table';
 
 Таблица 3.2 - Интерпретатор базовой ЭВМ (микропрограмма)
 
-<MyTable>
-     <thead>
+<table>
+    <thead>
         <tr>
             <th>Адрес</th>
             <th colSpan="2">Микрокоманды</th>
@@ -34,7 +32,7 @@ import MyTable from '/components/table';
             <th>5</th>
         </tr>
         <tr>
-            <th colSpan="5">***Цикл выборки команды***</th>
+            <th colSpan="5"><b><i>Цикл выборки команды</i></b></th>
         </tr>
     </thead>
     <tbody>
@@ -81,11 +79,7 @@ import MyTable from '/components/table';
             <td>БР ==> РК</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Определение типа команды***</td>
+            <th colspan=5><b><i>Определение типа команды</b></i></th>
         </tr>
         <tr>
             <td>07</td>
@@ -123,11 +117,7 @@ import MyTable from '/components/table';
             <td>GOTO B/B(8E)</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Определение вида адресации***</td>
+            <th colspan=5><b><i>Определение вида адресации</b></i></th>
         </tr>
         <tr>
             <td>0C</td>
@@ -137,11 +127,7 @@ import MyTable from '/components/table';
             <td>IF BIT(11,PK) = 0 THEN АДР(1D)</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Цикл выборки адреса операнда***</td>
+            <th colspan=5><b><i>Цикл выборки адреса операнда</b></i></th>
         </tr>
         <tr>
             <td>0D</td>
@@ -256,18 +242,10 @@ import MyTable from '/components/table';
             <td>БР ==> РД</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Цикл исполнения адресных команд***</td>
+            <th colspan=5><b><i>Цикл исполнения адресных команд</b></i></th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Декодирование адресных команд***</td>
+            <th colspan=5><b><i>Декодирование адресных команд</b></i></th>
         </tr>
         <tr>
             <td>1D</td>
@@ -289,13 +267,6 @@ import MyTable from '/components/table';
             <td>4001</td>
             <td></td>
             <td>БР ==> РА</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
         </tr>
         <tr>
             <td>20</td>
@@ -445,11 +416,7 @@ import MyTable from '/components/table';
             <td>GOTO BPL(4A)</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Исполнение адресных команд***</td>
+            <th colspan=5><b><i>Исполнение адресных команд</b></i></th>
         </tr>
         <tr>
             <td>35</td>
@@ -739,7 +706,7 @@ import MyTable from '/components/table';
             <td>GOTO ПРЕ(8F)</td>
         </tr>
         <tr>
-            <td colSpan="5">***Продолжение цикла выборки команды, декодирование и исполнение безадресных команд***</td>
+            <th colspan=5><b><i>Продолжение цикла выборки команды, декодирование и исполнение безадресных команд</b></i></th>
         </tr>
         <tr>
             <td>5E</td>
@@ -1078,7 +1045,7 @@ import MyTable from '/components/table';
             <td>GOTO НАЧ(01)</td>
         </tr>
         <tr>
-            <td colSpan="5">***Продолжение цикла выборки команды, декодирование и исполнение команд ввода-вывода***</td>
+            <th colspan=5><b><i>Продолжение цикла выборки команды, декодирование и исполнение команд ввода-вывода</b></i></th>
         </tr>
         <tr>
             <td>8E</td>
@@ -1088,7 +1055,7 @@ import MyTable from '/components/table';
             <td>Организация связей с ВУ</td>
         </tr>
         <tr>
-            <td colSpan="5">***Цикл прерывания***</td>
+            <th colspan=5><b><i>Цикл прерывания</b></i></th>
         </tr>
         <tr>
             <td>8F</td>
@@ -1161,14 +1128,10 @@ import MyTable from '/components/table';
             <td>GOTO НАЧ(01)</td>
         </tr>
         <tr>
-            <td colSpan="5">***Пультовые операции***</td>
+            <th colspan=5><b><i>Пультовые операции</b></i></th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Ввод адреса***</td>
+            <th colspan=5><b><i>Ввод адреса</b></i></th>
         </tr>
         <tr>
             <td>99</td>
@@ -1192,11 +1155,7 @@ import MyTable from '/components/table';
             <td>GOTO ПРЕ(8F)</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Чтение***</td>
+            <th colspan=5><b><i>Чтение</b></i></th>
         </tr>
         <tr>
             <td>9C</td>
@@ -1234,11 +1193,7 @@ import MyTable from '/components/table';
             <td>GOTO ПРЕ(8F)</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Запись***</td>
+            <th colspan=5><b><i>Запись</b></i></th>
         </tr>
         <tr>
             <td>A1</td>
@@ -1290,11 +1245,7 @@ import MyTable from '/components/table';
             <td>GOTO ПРЕ(8F)</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>***Пуск***</td>
+            <th colspan=5><b><i>Пуск</b></i></th>
         </tr>
         <tr>
             <td>A8</td>
@@ -1388,7 +1339,7 @@ import MyTable from '/components/table';
             <td></td>
         </tr>
     </tbody>
-</MyTable>
+</table>
 
 Далее содержимое БР, т.е. адрес следующей команды, пересылается в СК, а команда пересылается из РД в РК, после чего начинается ее дешифрация. 
 

@@ -2,7 +2,7 @@
 title: Оформление отчётов
 ---
 
-import { Cards, Card } from 'nextra/components'
+import { Cards } from 'nextra/components'
 import Image from 'next/image'
 
 
@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 В качестве титульного листа для составления отчётов можно использовать данный шаблон:
 
-  <Card icon={<Image src="/images/docs.png" width="40" height="40" />} title="Шаблон титульного листа" href="/files/titlepage.dotx" />
+  <Cards.Card icon={<Image src="/images/docs.png" width="40" height="40" alt = '' />} title="Шаблон титульного листа" href="/files/titlepage.dotx" />
 
 Не забудьте правильно заполненного титульного листа можете найти ниже (не забудьте убрать желтый цвет):
 
@@ -26,9 +26,9 @@ import Image from 'next/image'
 <table>
      <thead>
         <tr>
-            <th rowspan="2">Адрес</th>
-            <th colspan="2">Содержимое</th>
-            <th rowspan="2">Комментарий</th>
+            <th rowSpan="2">Адрес</th>
+            <th colSpan="2">Содержимое</th>
+            <th rowSpan="2">Комментарий</th>
         </tr>
         <tr>
             <th>Код</th>

@@ -1,4 +1,6 @@
-{
+import type { MetaRecord } from 'nextra'
+
+const meta: MetaRecord = {
   "index": "Информация",
   "emulators": "Эмуляторы",
   "titlepage": "Оформление отчётов",
@@ -13,3 +15,5 @@
     "display": "hidden"
   }
 }
+ 
+export default meta
