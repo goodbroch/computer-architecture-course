@@ -1,8 +1,23 @@
-import { generateStaticParamsFor, importPage } from 'nextra/pages'
+import { importPage } from 'nextra/pages'
 import { useMDXComponents } from '../../mdx-components'
+import { read_content } from './read_all_content';
 
-export const generateStaticParams = generateStaticParamsFor('mdxPath')
+//export const generateStaticParams = generateStaticParamsFor('mdxPath')
  
+export async function generateStaticParams()
+{
+	const paths = [];
+
+	const path_list = await read_content('./content/');
+
+	console.log(path_list);
+	for (let p = 0; p < path_list.length; p++) {
+		const element = path_list[p];
+		paths.push({ mdxPath: element })
+	}
+	return paths;
+}
+
 export async function generateMetadata(props) {
 	const params = await props.params;
 	const { metadata } = await importPage(params.mdxPath);
