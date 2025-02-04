@@ -10,7 +10,6 @@ export async function generateStaticParams()
 
 	const path_list = await read_content('./content/');
 
-	console.log(path_list);
 	for (let p = 0; p < path_list.length; p++) {
 		const element = path_list[p];
 		paths.push({ mdxPath: element })
@@ -28,6 +27,7 @@ const Wrapper = useMDXComponents().wrapper;
  
 export default async function Page(props) {
 	const params = await props.params;
+	console.log(`Prepare file ${params.mdxPath}`)
 	const result = await importPage(params.mdxPath);
 	const { default: MDXContent, toc, metadata } = result;
 
