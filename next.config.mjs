@@ -1,6 +1,9 @@
 import nextra from 'nextra'
  
-const withNextra = nextra({})
+const withNextra = nextra({
+	contentDirBasePath: '/',
+	staticImage: true
+})
 
 export default withNextra({
 	output: 'export',
